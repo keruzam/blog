@@ -4,18 +4,18 @@ package pl.keruzam.blog;
  * Spring Test
  * 
  * @author keruzam
- *
+ * 
  */
 public class Bean {
-	
+
 	private String name;
-	 
-	public void setName(String name) {
+
+	public void setName(final String name) {
 		this.name = name;
 	}
- 
-	public void printName() {
-		System.out.println("Bean name: " + name);
+
+	public String getName() {
+		return this.name;
 	}
-	
+
 }
